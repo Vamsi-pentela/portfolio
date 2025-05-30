@@ -1,0 +1,96 @@
+.service-container {
+  background-color: black;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.service-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+  position: relative;
+  text-align: center;
+}
+
+.service-heading .highlight-service {
+  position: relative;
+  background: linear-gradient(to right, #c850c0, #4158d0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.service-heading .highlight-service::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 20px;
+  background: url('../../assets/nav_underline.svg') no-repeat center bottom;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.service-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px; /* Increased spacing between cards */
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.service-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px; /* Increased padding */
+  width: 350px; /* Increased width */
+  max-width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
+
+.service-card h2 {
+  font-size: 28px; /* Larger heading */
+  color: #a855f7;
+  margin-bottom: 20px;
+}
+
+.service-card p {
+  font-size: 18px; /* Larger paragraph text */
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .service-heading {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-heading {
+    font-size: 3rem;
+  }
+
+  .service-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-heading {
+    font-size: 2.5rem;
+  }
+}

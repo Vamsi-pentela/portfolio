@@ -1,0 +1,93 @@
+.education-container {
+  background-color: black;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+ 
+}
+
+.education-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.highlight-education {
+  background: linear-gradient(to right, #c850c0, #4158d0);
+  background-clip: text; /* ✅ Standard property added */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-left: 10px;
+  position: relative;
+}
+
+/* Underline image for the heading */
+.highlight-education::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 20px;
+  background: url('../../assets/nav_underline.svg') no-repeat center bottom;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.education-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.education-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px 30px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.education-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(200, 100, 255, 0.5);
+}
+
+.education-item h3 {
+  color: #a855f7;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+
+.education-item p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 6px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .education-heading {
+    font-size: 3rem;
+  }
+
+  .education-list {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-heading {
+    font-size: 2.5rem;
+  }
+}

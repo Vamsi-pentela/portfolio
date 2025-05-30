@@ -1,0 +1,170 @@
+/* === Contact Section === */
+.connect-section {
+  padding: 4rem 1rem;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+}
+
+.connect-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.connect-heading {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom:80px;
+  text-align: center;
+  position: relative;
+}
+
+.connect-heading .highlight-connect {
+  background: linear-gradient(to right, #c850c0, #4158d0);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.connect-heading .highlight-connect::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 20px;
+  background: url('../../assets/nav_underline.svg') no-repeat center bottom;
+  background-size: contain;
+  pointer-events: none;
+}
+
+/* === Layout === */
+.connect-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.connect-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.connect-subheading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.connect-subheading .highlighted {
+  background: linear-gradient(to right, #ff0080, #ff8c00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.connect-text {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  max-width: 600px;
+  text-align: left;
+}
+
+.connect-info {
+  max-width: 600px;
+}
+
+.connect-info p {
+  margin: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.connect-icon {
+  font-size: 1.2rem;
+}
+
+/* === Form === */
+.connect-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.connect-form input,
+.connect-form textarea,
+.connect-form button {
+  font-family: 'Outfit', sans-serif; /* ✅ Explicitly apply font */
+}
+
+.connect-form input,
+.connect-form textarea {
+  background-color: #1c1c2e;
+  border: none;
+  padding: 1.2rem;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.1rem;
+}
+
+.connect-form textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+/* === Submit Button === */
+.submit-btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.submit-btn {
+  padding: 0.6rem 1.5rem;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 0.95rem;
+  font-weight: 400;
+  border-radius: 999px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  box-shadow: none;
+  position: static;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+.top-notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  animation: slideDownFadeOut 4s ease forwards;
+}
+
+@keyframes slideDownFadeOut {
+  0% { opacity: 0; transform: translate(-50%, -20px); }
+  10% { opacity: 1; transform: translate(-50%, 0); }
+  90% { opacity: 1; transform: translate(-50%, 0); }
+  100% { opacity: 0; transform: translate(-50%, -20px); }
+}

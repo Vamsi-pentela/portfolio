@@ -1,0 +1,28 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  
+  margin: 0 auto;
+  padding: 0 20px;
+  overflow-x: hidden;
+} 
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+input,
+textarea,
+button,
+select {
+  font-family: inherit; /* So all form elements inherit from body */
+}
